@@ -1,0 +1,24 @@
+#############
+## Idea
+#############
+target/
+.allure/
+allure-results/
+src/test/java/hw1/
+.idea/
+.idea
+.allure/
+.allure
+.repository/
+*.iml
+*.iws
+*.jrtc
+*.class
+*.info
+*.jar
+
+
+/out/
+/Instruction.png
+/out.log
+/out.log.*
