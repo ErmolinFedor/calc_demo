@@ -23,10 +23,6 @@ public class CalcTest {
     @DataProvider(name = "negative")
     public static Object[][] negative() {
         return new Object[][] {
-//                {"100500", "\"100\" + \"500\""},
-//                {"Hi ", "\"Hi World!\" - \"World!\""},
-//                {"Bye-bye!", "\"Bye-bye!\" - \"World!\""},
-//                {"JavaJavaJavaJavaJava", "\"Java\" * 5"},
                 {"number should be less 10", "\"Java\" * 11"},
                 {"number should be whole", "\"Java\" * 2.5"},
                 {"number should be whole", "\"Java\" * 2,5"},

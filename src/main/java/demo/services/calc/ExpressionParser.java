@@ -9,27 +9,23 @@ public class ExpressionParser {
     private String[] lines;
 
     public ExpressionParser(String line) throws Exception {
-        this.line = line;
-        if (isNull(line) || line.isEmpty()) throw new Exception("Line is Empty");
-        lines = line.split("\"");
-        if (line.charAt(0) != '"') throw new Exception("First Line is Empty");
+        //toDo релизовать контсруктор
+        //коструктор инициализирует lines и провереят строку и пробрасывает исключения Line is Empty
+        // и "First Line is Empty
     }
 
     public char getDelimiter() throws Exception {
-        if (lines[2].isEmpty()) throw new Exception("Line is Empty");
-
-        return lines[2].trim().charAt(0);
+        //toDo релизовать метод
+        // метод должен пробрасывать исключение "Line is Empty" и возвращать символ
     }
 
     public String getFirst() {
-        return lines[1];
+        //toDo релизовать метод
+        //метод должен возвращать первую часть строки в ковычках
     }
 
     public String getSecond() {
-        String second = lines[2].trim();
-        if (lines.length == 3) {
-            return second.substring(2);
-        }
-        return lines[3].trim();
+        //toDo релизовать метод
+        //метод должен возвращать вторую часть строки в ковычках либо число в виде строки
     }
 }
